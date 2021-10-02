@@ -1,0 +1,15 @@
+D:\WorkNew\LotteryManagement\bin\Debug\LotteryManagement.exe.config
+D:\WorkNew\LotteryManagement\bin\Debug\LotteryManagement.exe
+D:\WorkNew\LotteryManagement\bin\Debug\LotteryManagement.pdb
+D:\WorkNew\LotteryManagement\obj\Debug\LotteryManagement.csproj.AssemblyReference.cache
+D:\WorkNew\LotteryManagement\obj\Debug\LotteryManagement.frmLogin.resources
+D:\WorkNew\LotteryManagement\obj\Debug\LotteryManagement.Properties.Resources.resources
+D:\WorkNew\LotteryManagement\obj\Debug\LotteryManagement.csproj.GenerateResource.cache
+D:\WorkNew\LotteryManagement\obj\Debug\LotteryManagement.csproj.CoreCompileInputs.cache
+D:\WorkNew\LotteryManagement\obj\Debug\LotteryManagement.exe
+D:\WorkNew\LotteryManagement\obj\Debug\LotteryManagement.pdb
+D:\WorkNew\LotteryManagement\bin\Debug\EntityFramework.dll
+D:\WorkNew\LotteryManagement\bin\Debug\EntityFramework.SqlServer.dll
+D:\WorkNew\LotteryManagement\bin\Debug\EntityFramework.xml
+D:\WorkNew\LotteryManagement\bin\Debug\EntityFramework.SqlServer.xml
+D:\WorkNew\LotteryManagement\obj\Debug\LotteryManagement.csproj.CopyComplete
