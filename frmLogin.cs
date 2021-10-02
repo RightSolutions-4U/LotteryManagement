@@ -26,8 +26,11 @@ namespace LotteryManagement
 
             if ( dbcontext.Users.Where(r=>(r.UserName==txtUserName.Text) && r.Pwd == txtPassword.Text).Count()>0)
             {
+                this.Hide();
                 lblError.Visible = true;
                 lblError.Text = "Login";
+                frmMain dlr = new frmMain();
+                dlr.Show();
             }
             else
             {

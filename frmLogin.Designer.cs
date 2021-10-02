@@ -36,6 +36,7 @@ namespace LotteryManagement
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +48,7 @@ namespace LotteryManagement
             this.panel1.Controls.Add(this.txtUserName);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(14, 12);
+            this.panel1.Location = new System.Drawing.Point(14, 44);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(276, 142);
             this.panel1.TabIndex = 0;
@@ -112,12 +113,26 @@ namespace LotteryManagement
             this.label1.TabIndex = 0;
             this.label1.Text = "User Name";
             // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(301, 36);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Login";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(302, 166);
+            this.ClientSize = new System.Drawing.Size(301, 206);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.Name = "frmLogin";
             this.RightToLeftLayout = true;
@@ -137,6 +152,7 @@ namespace LotteryManagement
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.Label label3;
     }
 }
 
