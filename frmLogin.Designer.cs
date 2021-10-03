@@ -136,6 +136,7 @@ namespace LotteryManagement
             this.Controls.Add(this.panel1);
             this.Name = "frmLogin";
             this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login Form";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

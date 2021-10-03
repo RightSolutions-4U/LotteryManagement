@@ -30,5 +30,11 @@ namespace LotteryManagement
             FrmCustomer dlr = new FrmCustomer();
             dlr.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmSearch dlr = new frmSearch();
+            dlr.Show();
+        }
     }
 }

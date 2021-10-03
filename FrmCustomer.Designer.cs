@@ -31,8 +31,9 @@ namespace LotteryManagement
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmbDealer = new System.Windows.Forms.ComboBox();
+            this.txtCustomerId = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtPrice = new System.Windows.Forms.TextBox();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -42,9 +43,8 @@ namespace LotteryManagement
             this.txtLotteryNo = new System.Windows.Forms.TextBox();
             this.txtCustomerName = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtPrice = new System.Windows.Forms.TextBox();
-            this.txtCustomerId = new System.Windows.Forms.TextBox();
+            this.cmbDealer = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -71,22 +71,29 @@ namespace LotteryManagement
             this.panel1.Size = new System.Drawing.Size(457, 340);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // txtCustomerId
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(110, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Dealer";
+            this.txtCustomerId.Location = new System.Drawing.Point(396, 67);
+            this.txtCustomerId.Name = "txtCustomerId";
+            this.txtCustomerId.Size = new System.Drawing.Size(46, 20);
+            this.txtCustomerId.TabIndex = 22;
+            this.txtCustomerId.Visible = false;
             // 
-            // cmbDealer
+            // label4
             // 
-            this.cmbDealer.FormattingEnabled = true;
-            this.cmbDealer.Location = new System.Drawing.Point(196, 12);
-            this.cmbDealer.Name = "cmbDealer";
-            this.cmbDealer.Size = new System.Drawing.Size(140, 21);
-            this.cmbDealer.TabIndex = 2;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(329, 44);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(31, 13);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "Price";
+            // 
+            // txtPrice
+            // 
+            this.txtPrice.Location = new System.Drawing.Point(365, 41);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(46, 20);
+            this.txtPrice.TabIndex = 20;
             // 
             // btnReset
             // 
@@ -180,36 +187,29 @@ namespace LotteryManagement
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(64, 129);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 129);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(326, 191);
+            this.dataGridView1.Size = new System.Drawing.Size(418, 191);
             this.dataGridView1.TabIndex = 11;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // label4
+            // cmbDealer
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(329, 44);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 13);
-            this.label4.TabIndex = 21;
-            this.label4.Text = "Price";
+            this.cmbDealer.FormattingEnabled = true;
+            this.cmbDealer.Location = new System.Drawing.Point(196, 12);
+            this.cmbDealer.Name = "cmbDealer";
+            this.cmbDealer.Size = new System.Drawing.Size(140, 21);
+            this.cmbDealer.TabIndex = 2;
             // 
-            // txtPrice
+            // label1
             // 
-            this.txtPrice.Location = new System.Drawing.Point(365, 41);
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(46, 20);
-            this.txtPrice.TabIndex = 20;
-            // 
-            // txtCustomerId
-            // 
-            this.txtCustomerId.Location = new System.Drawing.Point(396, 67);
-            this.txtCustomerId.Name = "txtCustomerId";
-            this.txtCustomerId.Size = new System.Drawing.Size(46, 20);
-            this.txtCustomerId.TabIndex = 22;
-            this.txtCustomerId.Visible = false;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(110, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Dealer";
             // 
             // label5
             // 
@@ -233,6 +233,7 @@ namespace LotteryManagement
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
             this.Name = "FrmCustomer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCustomer";
             this.Load += new System.EventHandler(this.FrmCustomer_Load);
             this.panel1.ResumeLayout(false);

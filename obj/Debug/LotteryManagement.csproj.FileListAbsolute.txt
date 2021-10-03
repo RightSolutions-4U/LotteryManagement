@@ -16,3 +16,4 @@ D:\WorkNew\LotteryManagement\obj\Debug\LotteryManagement.csproj.CopyComplete
 D:\WorkNew\LotteryManagement\obj\Debug\LotteryManagement.frmDealer.resources
 D:\WorkNew\LotteryManagement\obj\Debug\LotteryManagement.FrmCustomer.resources
 D:\WorkNew\LotteryManagement\obj\Debug\LotteryManagement.frmMain.resources
+D:\WorkNew\LotteryManagement\obj\Debug\LotteryManagement.frmSearch.resources
