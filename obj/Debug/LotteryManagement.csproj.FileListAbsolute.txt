@@ -1,7 +1,6 @@
 D:\WorkNew\LotteryManagement\bin\Debug\LotteryManagement.exe.config
 D:\WorkNew\LotteryManagement\bin\Debug\LotteryManagement.exe
 D:\WorkNew\LotteryManagement\bin\Debug\LotteryManagement.pdb
-D:\WorkNew\LotteryManagement\obj\Debug\LotteryManagement.csproj.AssemblyReference.cache
 D:\WorkNew\LotteryManagement\obj\Debug\LotteryManagement.frmLogin.resources
 D:\WorkNew\LotteryManagement\obj\Debug\LotteryManagement.Properties.Resources.resources
 D:\WorkNew\LotteryManagement\obj\Debug\LotteryManagement.csproj.GenerateResource.cache
@@ -17,3 +16,4 @@ D:\WorkNew\LotteryManagement\obj\Debug\LotteryManagement.frmDealer.resources
 D:\WorkNew\LotteryManagement\obj\Debug\LotteryManagement.FrmCustomer.resources
 D:\WorkNew\LotteryManagement\obj\Debug\LotteryManagement.frmMain.resources
 D:\WorkNew\LotteryManagement\obj\Debug\LotteryManagement.frmSearch.resources
+D:\WorkNew\LotteryManagement\obj\Debug\LotteryManagement.csproj.AssemblyReference.cache

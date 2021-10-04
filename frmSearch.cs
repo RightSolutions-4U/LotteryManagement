@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity.SqlServer;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,20 +18,34 @@ namespace LotteryManagement
             InitializeComponent();
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
+        private void txtPrice_TextChanged(object sender, EventArgs e)
         {
-            lblError.Visible = false;
-            LotteryManagementEntities dbcontext = new LotteryManagementEntities();
-            Int32 price = Convert.ToInt32(txtPrice.Text);
-            if (dbcontext.Customers.Where(r => (r.Price == price)).Count() > 0)
+            displayData(sender, e);
+        }
+
+        private void displayData(object sender, EventArgs e)
+        {
+
+            dataGridView1.DataSource = null;
+            if (txtLotteryNo.Text != "")
             {
-                dataGridView1.DataSource = dbcontext.Customers.ToList();
+                LotteryManagementEntities dbcontext = new LotteryManagementEntities();
+                dataGridView1.DataSource = dbcontext.Customers.Where(r => (r.LotteryNo.Contains(txtLotteryNo.Text))).ToList();
             }
-            else
+
+            int numRows = dataGridView1.Rows.Count;
+
+            txtCount.Text = numRows.ToString();
+
+            int sum = 0;
+
+            for (int i = 0; i < dataGridView1.Rows.Count; ++i)
             {
-                lblError.Visible = true;
-                lblError.Text="No Records found for this price";
+                sum += Convert.ToInt32(dataGridView1.Rows[i].Cells[4].Value);
             }
+
+            txtTotal.Text = sum.ToString();
+
         }
     }
 }

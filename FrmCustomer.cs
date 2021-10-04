@@ -53,7 +53,7 @@ namespace LotteryManagement
                 LotteryManagementEntities dbcontext = new LotteryManagementEntities();
                 Customer dl = new Customer();
                 dl.CustomerName = txtCustomerName.Text;
-                dl.LotteryNo = Convert.ToInt32(txtLotteryNo.Text);
+                dl.LotteryNo = txtLotteryNo.Text;
                 dl.Price = Convert.ToInt32(txtPrice.Text);
                 dl.DealerId = Convert.ToInt32(cmbDealer.SelectedValue);
                 dbcontext.Customers.Add(dl);
@@ -66,6 +66,23 @@ namespace LotteryManagement
 
             LotteryManagementEntities dbcontext = new LotteryManagementEntities();
             dataGridView1.DataSource = dbcontext.Customers.ToList();
+            
+            int numRows = dataGridView1.Rows.Count;
+
+            txtCount.Text = numRows.ToString();
+
+            int sum = 0;
+
+            for (int i = 0; i < dataGridView1.Rows.Count; ++i)
+
+            {
+
+                sum += Convert.ToInt32(dataGridView1.Rows[i].Cells[4].Value);
+
+            }
+
+            txtTotal.Text = sum.ToString();
+
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -81,7 +98,7 @@ namespace LotteryManagement
                 Int32 CId = Convert.ToInt32(txtCustomerId.Text);
                 var Customer = dbcontext.Customers.First(a => a.DealerId == DId && a.CustomerId == CId);
                 Customer.CustomerName = txtCustomerName.Text;
-                Customer.LotteryNo = Convert.ToInt32(txtLotteryNo.Text);
+                Customer.LotteryNo = txtLotteryNo.Text;
                 Customer.Price = Convert.ToInt32(txtPrice.Text);
                 dbcontext.SaveChanges();
                 displayData(sender, e);

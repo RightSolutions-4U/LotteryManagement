@@ -9,6 +9,7 @@
         <EntityTypeShape EntityType="LotteryManagementModel.Dealer" Width="1.5" PointX="0.875" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="LotteryManagementModel.User" Width="1.5" PointX="4.75" PointY="1.25" IsExpanded="true" />
         <AssociationConnector Association="LotteryManagementModel.FK_Customer_Dealer" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="LotteryManagementModel.sysdiagram" Width="1.5" PointX="6.75" PointY="1.125" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

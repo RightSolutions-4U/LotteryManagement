@@ -8,7 +8,7 @@
     <Property Name="CustomerId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="DealerId" Type="int" Nullable="false" />
     <Property Name="CustomerName" Type="nvarchar" MaxLength="50" />
-    <Property Name="LotteryNo" Type="int" />
+    <Property Name="LotteryNo" Type="nvarchar" MaxLength="4" />
     <Property Name="Price" Type="int" />
   </EntityType>
   <EntityType Name="Dealer">
@@ -19,6 +19,16 @@
     <Property Name="DealerName" Type="nvarchar" MaxLength="50" />
     <Property Name="DealerCellNo" Type="nvarchar" MaxLength="50" />
   </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
   <EntityType Name="Users">
     <Key>
       <PropertyRef Name="UserId" />
@@ -27,25 +37,10 @@
     <Property Name="UserName" Type="nvarchar" MaxLength="50" />
     <Property Name="Pwd" Type="nvarchar" MaxLength="50" />
   </EntityType>
-  <Association Name="FK_Customer_Dealer">
-    <End Role="Dealer" Type="Self.Dealer" Multiplicity="1" />
-    <End Role="Customer" Type="Self.Customer" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Dealer">
-        <PropertyRef Name="DealerId" />
-      </Principal>
-      <Dependent Role="Customer">
-        <PropertyRef Name="DealerId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <EntityContainer Name="LotteryManagementModelStoreContainer">
     <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Dealer" EntityType="Self.Dealer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK_Customer_Dealer" Association="Self.FK_Customer_Dealer">
-      <End Role="Dealer" EntitySet="Dealer" />
-      <End Role="Customer" EntitySet="Customer" />
-    </AssociationSet>
   </EntityContainer>
 </Schema>

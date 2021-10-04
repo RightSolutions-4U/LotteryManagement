@@ -8,7 +8,7 @@
     <Property Name="CustomerId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="DealerId" Type="Int32" Nullable="false" />
     <Property Name="CustomerName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="LotteryNo" Type="Int32" />
+    <Property Name="LotteryNo" Type="String" />
     <Property Name="Price" Type="Int32" />
     <NavigationProperty Name="Dealer" Relationship="Self.FK_Customer_Dealer" FromRole="Customer" ToRole="Dealer" />
   </EntityType>
@@ -49,5 +49,16 @@
       <End Role="Dealer" EntitySet="Dealers" />
       <End Role="Customer" EntitySet="Customers" />
     </AssociationSet>
+    <EntitySet Name="sysdiagrams" EntityType="LotteryManagementModel.sysdiagram" />
   </EntityContainer>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
 </Schema>

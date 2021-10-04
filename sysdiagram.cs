@@ -12,14 +12,12 @@ namespace LotteryManagement
     using System;
     using System.Collections.Generic;
     
-    public partial class Customer
+    public partial class sysdiagram
     {
-        public int CustomerId { get; set; }
-        public int DealerId { get; set; }
-        public string CustomerName { get; set; }
-        public string LotteryNo { get; set; }
-        public Nullable<int> Price { get; set; }
-    
-        public virtual Dealer Dealer { get; set; }
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }
