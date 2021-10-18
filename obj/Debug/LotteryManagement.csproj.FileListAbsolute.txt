@@ -17,3 +17,7 @@ D:\WorkNew\LotteryManagement\obj\Debug\LotteryManagement.FrmCustomer.resources
 D:\WorkNew\LotteryManagement\obj\Debug\LotteryManagement.frmMain.resources
 D:\WorkNew\LotteryManagement\obj\Debug\LotteryManagement.frmSearch.resources
 D:\WorkNew\LotteryManagement\obj\Debug\LotteryManagement.csproj.AssemblyReference.cache
+D:\WorkNew\LotteryManagement\bin\Debug\Newtonsoft.Json.dll
+D:\WorkNew\LotteryManagement\bin\Debug\System.Net.Http.Formatting.dll
+D:\WorkNew\LotteryManagement\bin\Debug\Newtonsoft.Json.xml
+D:\WorkNew\LotteryManagement\bin\Debug\System.Net.Http.Formatting.xml

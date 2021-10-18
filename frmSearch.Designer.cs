@@ -42,10 +42,11 @@ namespace LotteryManagement
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.btnSend = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lblmessage = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -161,6 +162,7 @@ namespace LotteryManagement
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel2.Controls.Add(this.lblmessage);
             this.panel2.Controls.Add(this.btnSend);
             this.panel2.Controls.Add(this.textBox4);
             this.panel2.Controls.Add(this.textBox3);
@@ -169,29 +171,8 @@ namespace LotteryManagement
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Location = new System.Drawing.Point(18, 365);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(522, 73);
+            this.panel2.Size = new System.Drawing.Size(522, 104);
             this.panel2.TabIndex = 33;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(162, 30);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(46, 20);
-            this.textBox2.TabIndex = 33;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(231, 30);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(46, 20);
-            this.textBox3.TabIndex = 34;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(300, 30);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(46, 20);
-            this.textBox4.TabIndex = 35;
             // 
             // btnSend
             // 
@@ -203,13 +184,45 @@ namespace LotteryManagement
             this.btnSend.TabIndex = 36;
             this.btnSend.Text = "Send";
             this.btnSend.UseVisualStyleBackColor = false;
+            this.btnSend.Click += new System.EventHandler(this.BtnSend_Click);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(300, 30);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(46, 20);
+            this.textBox4.TabIndex = 35;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(231, 30);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(46, 20);
+            this.textBox3.TabIndex = 34;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(162, 30);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(46, 20);
+            this.textBox2.TabIndex = 33;
+            // 
+            // lblmessage
+            // 
+            this.lblmessage.AutoSize = true;
+            this.lblmessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmessage.ForeColor = System.Drawing.Color.Maroon;
+            this.lblmessage.Location = new System.Drawing.Point(95, 72);
+            this.lblmessage.Name = "lblmessage";
+            this.lblmessage.Size = new System.Drawing.Size(0, 17);
+            this.lblmessage.TabIndex = 37;
             // 
             // frmSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(560, 451);
+            this.ClientSize = new System.Drawing.Size(560, 481);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtTotal);
@@ -221,6 +234,7 @@ namespace LotteryManagement
             this.Name = "frmSearch";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Search";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -249,5 +263,6 @@ namespace LotteryManagement
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button btnSend;
+        private System.Windows.Forms.Label lblmessage;
     }
 }

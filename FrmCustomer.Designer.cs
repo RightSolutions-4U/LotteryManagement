@@ -275,6 +275,7 @@ namespace LotteryManagement
             this.Name = "FrmCustomer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCustomer";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmCustomer_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
