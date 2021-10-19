@@ -56,6 +56,10 @@ namespace LotteryManagement
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.txtCount);
+            this.panel1.Controls.Add(this.txtTotal);
             this.panel1.Controls.Add(this.txtCustomerId);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txtPrice);
@@ -72,12 +76,12 @@ namespace LotteryManagement
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(12, 44);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(457, 340);
+            this.panel1.Size = new System.Drawing.Size(858, 397);
             this.panel1.TabIndex = 0;
             // 
             // txtCustomerId
             // 
-            this.txtCustomerId.Location = new System.Drawing.Point(396, 67);
+            this.txtCustomerId.Location = new System.Drawing.Point(544, 68);
             this.txtCustomerId.Name = "txtCustomerId";
             this.txtCustomerId.Size = new System.Drawing.Size(46, 20);
             this.txtCustomerId.TabIndex = 22;
@@ -86,26 +90,27 @@ namespace LotteryManagement
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(329, 44);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(580, 48);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 13);
+            this.label4.Size = new System.Drawing.Size(40, 17);
             this.label4.TabIndex = 21;
             this.label4.Text = "Price";
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(365, 41);
+            this.txtPrice.Location = new System.Drawing.Point(625, 42);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(46, 20);
+            this.txtPrice.Size = new System.Drawing.Size(100, 20);
             this.txtPrice.TabIndex = 20;
             // 
             // btnReset
             // 
             this.btnReset.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnReset.ForeColor = System.Drawing.Color.Yellow;
-            this.btnReset.Location = new System.Drawing.Point(315, 88);
+            this.btnReset.Location = new System.Drawing.Point(583, 89);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(75, 23);
+            this.btnReset.Size = new System.Drawing.Size(91, 33);
             this.btnReset.TabIndex = 19;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = false;
@@ -115,9 +120,9 @@ namespace LotteryManagement
             // 
             this.btnDelete.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnDelete.ForeColor = System.Drawing.Color.Yellow;
-            this.btnDelete.Location = new System.Drawing.Point(231, 88);
+            this.btnDelete.Location = new System.Drawing.Point(470, 89);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.Size = new System.Drawing.Size(91, 33);
             this.btnDelete.TabIndex = 18;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -127,9 +132,9 @@ namespace LotteryManagement
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnUpdate.ForeColor = System.Drawing.Color.Yellow;
-            this.btnUpdate.Location = new System.Drawing.Point(147, 88);
+            this.btnUpdate.Location = new System.Drawing.Point(362, 89);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.Size = new System.Drawing.Size(91, 33);
             this.btnUpdate.TabIndex = 17;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -139,9 +144,9 @@ namespace LotteryManagement
             // 
             this.btnAdd.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnAdd.ForeColor = System.Drawing.Color.Yellow;
-            this.btnAdd.Location = new System.Drawing.Point(63, 88);
+            this.btnAdd.Location = new System.Drawing.Point(249, 89);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.Size = new System.Drawing.Size(91, 33);
             this.btnAdd.TabIndex = 16;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -150,31 +155,33 @@ namespace LotteryManagement
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(207, 44);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(390, 49);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 13);
+            this.label2.Size = new System.Drawing.Size(78, 17);
             this.label2.TabIndex = 15;
             this.label2.Text = "Lottery No.";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 44);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(158, 49);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 13);
+            this.label3.Size = new System.Drawing.Size(109, 17);
             this.label3.TabIndex = 14;
             this.label3.Text = "Customer Name";
             // 
             // txtLotteryNo
             // 
-            this.txtLotteryNo.Location = new System.Drawing.Point(269, 41);
+            this.txtLotteryNo.Location = new System.Drawing.Point(475, 46);
             this.txtLotteryNo.Name = "txtLotteryNo";
-            this.txtLotteryNo.Size = new System.Drawing.Size(46, 20);
+            this.txtLotteryNo.Size = new System.Drawing.Size(100, 20);
             this.txtLotteryNo.TabIndex = 13;
             // 
             // txtCustomerName
             // 
-            this.txtCustomerName.Location = new System.Drawing.Point(96, 41);
+            this.txtCustomerName.Location = new System.Drawing.Point(279, 46);
             this.txtCustomerName.Name = "txtCustomerName";
             this.txtCustomerName.Size = new System.Drawing.Size(100, 20);
             this.txtCustomerName.TabIndex = 12;
@@ -191,27 +198,28 @@ namespace LotteryManagement
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 129);
+            this.dataGridView1.Location = new System.Drawing.Point(223, 138);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(418, 191);
+            this.dataGridView1.Size = new System.Drawing.Size(480, 190);
             this.dataGridView1.TabIndex = 11;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // cmbDealer
             // 
             this.cmbDealer.FormattingEnabled = true;
-            this.cmbDealer.Location = new System.Drawing.Point(196, 12);
+            this.cmbDealer.Location = new System.Drawing.Point(388, 13);
             this.cmbDealer.Name = "cmbDealer";
-            this.cmbDealer.Size = new System.Drawing.Size(140, 21);
+            this.cmbDealer.Size = new System.Drawing.Size(246, 21);
             this.cmbDealer.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(110, 15);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(302, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.Size = new System.Drawing.Size(50, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Dealer";
             // 
@@ -223,7 +231,7 @@ namespace LotteryManagement
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(485, 36);
+            this.label5.Size = new System.Drawing.Size(1047, 36);
             this.label5.TabIndex = 10;
             this.label5.Text = "Customers";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -231,47 +239,45 @@ namespace LotteryManagement
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(228, 406);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(466, 363);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 13);
+            this.label6.Size = new System.Drawing.Size(76, 17);
             this.label6.TabIndex = 26;
             this.label6.Text = "Total Price";
             // 
             // txtTotal
             // 
-            this.txtTotal.Location = new System.Drawing.Point(302, 403);
+            this.txtTotal.Location = new System.Drawing.Point(567, 360);
             this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(46, 20);
+            this.txtTotal.Size = new System.Drawing.Size(83, 20);
             this.txtTotal.TabIndex = 25;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(106, 406);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(264, 360);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 24;
+            this.label7.Size = new System.Drawing.Size(45, 17);
+            this.label7.TabIndex = 26;
             this.label7.Text = "Count";
             // 
             // txtCount
             // 
-            this.txtCount.Location = new System.Drawing.Point(157, 403);
+            this.txtCount.Location = new System.Drawing.Point(319, 360);
             this.txtCount.Name = "txtCount";
-            this.txtCount.Size = new System.Drawing.Size(46, 20);
-            this.txtCount.TabIndex = 23;
+            this.txtCount.Size = new System.Drawing.Size(83, 20);
+            this.txtCount.TabIndex = 25;
             // 
             // FrmCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(485, 447);
-            this.Controls.Add(this.label6);
+            this.ClientSize = new System.Drawing.Size(1047, 468);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtCount);
             this.Name = "FrmCustomer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCustomer";
@@ -281,7 +287,6 @@ namespace LotteryManagement
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

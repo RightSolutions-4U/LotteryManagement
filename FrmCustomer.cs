@@ -19,6 +19,7 @@ namespace LotteryManagement
 
         private void FrmCustomer_Load(object sender, EventArgs e)
         {
+            panel1.Left = (this.Width / 2) - 500;
             FillcmbDealer(sender, e);
             displayData(sender, e);
         }

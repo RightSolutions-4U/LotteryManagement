@@ -36,5 +36,11 @@ namespace LotteryManagement
             frmSearch dlr = new frmSearch();
             dlr.Show();
         }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            panel1.Left = (this.Width / 2) - 250;
+          
+        }
     }
 }

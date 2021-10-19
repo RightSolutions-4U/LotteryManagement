@@ -21,6 +21,7 @@ namespace LotteryManagement
         {
             /*LotteryManagementEntities dbcontext = new LotteryManagementEntities();
             dataGridView1.DataSource = dbcontext.Dealers;*/
+            panel1.Left = (this.Width / 2) - 300;
             displayData(sender, e);
         }
 

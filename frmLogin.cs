@@ -40,6 +40,10 @@ namespace LotteryManagement
 
         }
 
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            panel1.Left = (this.Width / 2) - 250;
+        }
     }
 
 }

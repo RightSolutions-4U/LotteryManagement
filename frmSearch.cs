@@ -93,5 +93,11 @@ namespace LotteryManagement
 
 
         }
+
+        private void frmSearch_Load(object sender, EventArgs e)
+        {
+            panel1.Left = (this.Width / 2) - 250;
+            panel2.Left = (this.Width / 2) - 250;
+        }
     }
 }
